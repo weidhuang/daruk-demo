@@ -5,7 +5,7 @@
     "module": "commonjs",
     "sourceMap": true,
     "outDir": "./build",
-    "rootDir": "./src",
+    // "rootDir": "./src",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true

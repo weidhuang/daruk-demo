@@ -1,16 +1,12 @@
-import { DarukServer, controller, get, DarukContext } from 'daruk';
-(async () => {
+import { DarukServer } from 'daruk';
+const setUpApp = async () => {
   const myapp = DarukServer();
 
-  @controller()
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  class Index {
-    @get('/')
-    public async index(ctx: DarukContext) {
-      ctx.body = 'hello world';
-    }
-  }
+  myapp.loadFile('controllers');
+  // myapp.loadFile('services');
+  // myapp.loadFile('repositories');
 
   await myapp.binding();
   myapp.listen(3000);
-})();
+};
+setUpApp();
