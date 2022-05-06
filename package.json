@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "daruk": "^2.3.11"
+    "daruk": "^2.3.11",
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.21.0",
@@ -21,7 +22,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "prettier": "^2.6.2",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.3"
+    "ts-node": "^10.7.0"
   }
 }
